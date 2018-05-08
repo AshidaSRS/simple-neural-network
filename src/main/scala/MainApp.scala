@@ -1,58 +1,45 @@
-import scala.util.Random
 import breeze.linalg._
-import breeze.numerics._
 
 object MainApp extends App {
 
-  val row = 3
-  val col = 1
-  val learning = 10000
-
   val set1 = DenseVector(0,0,1)
-  val set2 = DenseVector(1,1,1)
+  val set2 = DenseVector(0,1,1)
   val set3 = DenseVector(1,0,1)
-  val set4 = DenseVector(0,1,1)
-  val outSet1 = DenseVector(0,1,1,0)
-  val outSet2 = DenseVector(1,1,1,1)
+  val set4 = DenseVector(0,1,0)
+  val set5 = DenseVector(1,0,0)
+  val set6 = DenseVector(1,1,1)
+  val set7 = DenseVector(0,0,0)
 
-  val trainingSetInputs = DenseMatrix(set1, set2, set3, set4)
-  val trainingSetOutputs = DenseMatrix(outSet1).t
+  val outSet = DenseVector(0,1,1,1,1,0,0)
 
-  println(s"Train entry: \n$trainingSetInputs")
-  println(s"Train exit: \n$trainingSetOutputs")
+  val trainingSetInputs = DenseMatrix(set1, set2, set3, set4, set5, set6, set7)
+  val trainingSetOutputs = DenseMatrix(outSet).t
 
-  def serial(): Unit = Random.setSeed(1)
+  val layer1: NeuronLayer = NeuronLayer(4, 3)
+  val layer2: NeuronLayer = NeuronLayer(1, 4)
 
-  def getRandom = 2 * Random.nextDouble() -1
-  def getArray(n: Int): Array[Double] = if (n == 1) Array(getRandom) else  Array(getRandom) ++ getArray(n-1)
-  val weights: DenseMatrix[Double] = DenseMatrix.create(row, col, getArray(row))
-  println(s"First weights \n$weights")
+  val neuralNetwork: NeuralNetwork = NeuralNetwork(layer1, layer2)
 
-  def think(inputs: DenseMatrix[Int], weights: DenseMatrix[Double]): DenseMatrix[Double] = sigmoid(convert(inputs, Double) * weights)
+  println("Random start weights")
+  println(s"Layer 1: \n${neuralNetwork.layer1.weights.data.mkString("\n")}")
+  println(s"Layer 2: \n${neuralNetwork.layer2.weights.data.mkString("\n")}")
 
-  def sigmoidDerivative(x: DenseMatrix[Double]): DenseMatrix[Double] = x *:* (-x + 1.0)
+  println("Training Inputs")
+  println(trainingSetInputs)
 
-  def train(inputs: DenseMatrix[Int], outputs: DenseMatrix[Int]): DenseMatrix[Double] = {
+  println("Trainig Outputs")
+  println(trainingSetOutputs)
 
-    def trainAux(inputs: DenseMatrix[Int], outputs: DenseMatrix[Int], weights: DenseMatrix[Double], n: Int): DenseMatrix[Double] = {
-      n match {
-        case 0 => weights
-        case _ =>
-          val output: DenseMatrix[Double] = think(inputs, weights)
-          val error: DenseMatrix[Double] = convert(outputs, Double) - output
-          val adjust: DenseMatrix[Double] = convert(inputs, Double).t * (error *:* sigmoidDerivative(output))
-          trainAux(inputs, outputs, weights + adjust, n - 1)
-      }
-    }
+  val newNeuralN: NeuralNetwork =
+    NeuralNetwork.train(neuralNetwork, trainingSetInputs, trainingSetOutputs, 60000)
 
-    trainAux(inputs, outputs, weights, learning)
-  }
-  val newW: DenseMatrix[Double] = train(trainingSetInputs, trainingSetOutputs)
+  println("New start weights")
+  println(s"Layer 1: \n${newNeuralN.layer1.weights.data.mkString("\n")}")
+  println(s"Layer 2: \n${newNeuralN.layer2.weights.data.mkString("\n")}")
 
-  println("Last weights")
-  println(newW)
-
-  val newSituation: Array[Int] = Array(1,0,0)
-  val result = think(DenseMatrix.create(col,row, newSituation), newW)
-  println(s"New situation [${newSituation.mkString(", ")}]: $result ~> ${round(result)}")
+  val newSituation = Array(1,1,0)
+  println(s"New situation [${newSituation.mkString(", ")}] -> ?")
+  val newThink: Think2 = NeuralNetwork.think(newNeuralN, DenseMatrix.create(1, 3, newSituation))
+  println(s"Hidden state: \n${newThink.neuron1}")
+  println(s"Result: \n${newThink.neuron2}")
 }
