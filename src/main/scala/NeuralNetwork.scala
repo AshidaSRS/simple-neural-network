@@ -11,8 +11,8 @@ object NeuralNetwork {
     new NeuralNetwork(layer1, layer2)
 
   def think(nn: NeuralNetwork, inputs: DenseMatrix[Int]): Think2 = {
-    val outputL1 = sigmoid(convert(inputs, Double) * nn.layer1.weights)
-    val outputL2 = sigmoid(outputL1 * nn.layer2.weights)
+    val outputL1 = sigmoid(convert(inputs, Double) * nn.layer1.synapse)
+    val outputL2 = sigmoid(outputL1 * nn.layer2.synapse)
     Think2(outputL1, outputL2)
   }
 
@@ -29,15 +29,15 @@ object NeuralNetwork {
           val errorsL2 = convert(tOutputs, Double) - outputs.neuron2
           val errorsL2Delta = errorsL2 *:* sigmoidDerivative(outputs.neuron2)
 
-          val errorsL1 = errorsL2Delta * nn.layer2.weights.t
+          val errorsL1 = errorsL2Delta * nn.layer2.synapse.t
           val errorsL1Delta = errorsL1 *:* sigmoidDerivative(outputs.neuron1)
 
           val adjustmentL1 = convert(tInputs, Double).t * errorsL1Delta
           val adjustmentL2 = outputs.neuron1.t * errorsL2Delta
 
           val newNeural = nn.copy(
-            layer1 = nn.layer1.copy(weights = nn.layer1.weights + adjustmentL1),
-            layer2 = nn.layer2.copy(weights = nn.layer2.weights + adjustmentL2)
+            layer1 = nn.layer1.copy(synapse = nn.layer1.synapse + adjustmentL1),
+            layer2 = nn.layer2.copy(synapse = nn.layer2.synapse + adjustmentL2)
           )
           trainAux(newNeural, inputs, tOutputs, n - 1)
       }

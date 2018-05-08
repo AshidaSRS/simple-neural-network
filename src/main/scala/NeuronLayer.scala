@@ -3,7 +3,7 @@ import breeze.stats.distributions.Rand
 
 import scala.util.Random
 
-case class NeuronLayer(total: Int, neuronInputs: Int, weights: DenseMatrix[Double])
+case class NeuronLayer(total: Int, neuronInputs: Int, synapse: DenseMatrix[Double])
 
 object NeuronLayer {
 

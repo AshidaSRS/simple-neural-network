@@ -21,8 +21,8 @@ object MainApp extends App {
   val neuralNetwork: NeuralNetwork = NeuralNetwork(layer1, layer2)
 
   println("Random start weights")
-  println(s"Layer 1: \n${neuralNetwork.layer1.weights.data.mkString("\n")}")
-  println(s"Layer 2: \n${neuralNetwork.layer2.weights.data.mkString("\n")}")
+  println(s"Layer 1: \n${neuralNetwork.layer1.synapse.data.mkString("\n")}")
+  println(s"Layer 2: \n${neuralNetwork.layer2.synapse.data.mkString("\n")}")
 
   println("Training Inputs")
   println(trainingSetInputs)
@@ -34,8 +34,8 @@ object MainApp extends App {
     NeuralNetwork.train(neuralNetwork, trainingSetInputs, trainingSetOutputs, 60000)
 
   println("New start weights")
-  println(s"Layer 1: \n${newNeuralN.layer1.weights.data.mkString("\n")}")
-  println(s"Layer 2: \n${newNeuralN.layer2.weights.data.mkString("\n")}")
+  println(s"Layer 1: \n${newNeuralN.layer1.synapse.data.mkString("\n")}")
+  println(s"Layer 2: \n${newNeuralN.layer2.synapse.data.mkString("\n")}")
 
   val newSituation = Array(1,1,0)
   println(s"New situation [${newSituation.mkString(", ")}] -> ?")
