@@ -1,0 +1,110 @@
+[0m[[0minfo[0m] [0mRunning MainApp [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/git/simple-neural-network/target/scala-2.12/classes[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.scalanlp/breeze_2.12/jars/breeze_2.12-1.0-RC2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.scalanlp/breeze-macros_2.12/jars/breeze-macros_2.12-1.0-RC2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.6.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/net.sf.opencsv/opencsv/jars/opencsv-2.3.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.wendykierp/JTransforms/jars/JTransforms-3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/pl.edu.icm/JLargeArrays/jars/JLargeArrays-1.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.spire-math/spire_2.12/jars/spire_2.12-0.13.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.spire-math/spire-macros_2.12/jars/spire-macros_2.12-0.13.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.scalanlp/breeze-natives_2.12/jars/breeze-natives_2.12-1.0-RC2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/jars/netlib-native_ref-osx-x86_64-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/native_ref-java/jars/native_ref-java-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil/jniloader/jars/jniloader-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/jars/netlib-native_ref-linux-x86_64-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/jars/netlib-native_ref-linux-i686-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/jars/netlib-native_ref-win-x86_64-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/jars/netlib-native_ref-win-i686-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/jars/netlib-native_ref-linux-armhf-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/jars/netlib-native_system-osx-x86_64-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/native_system-java/jars/native_system-java-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/jars/netlib-native_system-linux-x86_64-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/jars/netlib-native_system-linux-i686-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/jars/netlib-native_system-linux-armhf-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.scalanlp/breeze-viz_2.12/jars/breeze-viz_2.12-1.0-RC2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/jfree/jcommon/jars/jcommon-1.0.16.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/jfree/jfreechart/jars/jfreechart-1.0.13.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/org.apache.xmlgraphics/xmlgraphics-commons/jars/xmlgraphics-commons-1.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/commons-io/commons-io/jars/commons-io-1.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.0.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar[0m
+[0m[[0mdebug[0m] [0m	/home/ashida/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-0) java.lang.IllegalArgumentException: requirement failed: a.cols == b.rows (1 != 4)[0m
+java.lang.IllegalArgumentException: requirement failed: a.cols == b.rows (1 != 4)
+	at breeze.linalg.operators.DenseMatrixMultOps$$anon$176.apply(DenseMatrixOps.scala:995)
+	at breeze.linalg.operators.DenseMatrixMultOps$$anon$176.apply(DenseMatrixOps.scala:966)
+	at breeze.linalg.ImmutableNumericOps.$times(NumericOps.scala:154)
+	at breeze.linalg.ImmutableNumericOps.$times$(NumericOps.scala:153)
+	at breeze.linalg.DenseMatrix.$times(DenseMatrix.scala:52)
+	at MainApp$.sigmoidDerivative(MainApp.scala:30)
+	at MainApp$.trainAux$1(MainApp.scala:43)
+	at MainApp$.train(MainApp.scala:49)
+	at MainApp$.delayedEndpoint$MainApp$1(MainApp.scala:52)
+	at MainApp$delayedInit$body.apply(MainApp.scala:6)
+	at scala.Function0.apply$mcV$sp(Function0.scala:34)
+	at scala.Function0.apply$mcV$sp$(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App.$anonfun$main$1$adapted(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.App.main(App.scala:76)
+	at scala.App.main$(App.scala:74)
+	at MainApp$.main(MainApp.scala:6)
+	at MainApp.main(MainApp.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:84)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:748)
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-1[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48$$anonfun$apply$49.apply(Defaults.scala:803)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48$$anonfun$apply$49.apply(Defaults.scala:803)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48.apply(Defaults.scala:803)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48.apply(Defaults.scala:801)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m[[31merror[0m] [0m(compile:[31mrun[0m) Nonzero exit code: 1[0m
