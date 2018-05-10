@@ -1,3 +1,5 @@
+package simpleNeural
+
 import breeze.linalg._
 import breeze.numerics._
 

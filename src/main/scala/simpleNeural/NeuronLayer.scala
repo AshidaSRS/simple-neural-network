@@ -1,3 +1,5 @@
+package simpleNeural
+
 import breeze.linalg.DenseMatrix
 import breeze.stats.distributions.Rand
 
