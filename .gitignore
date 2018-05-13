@@ -135,3 +135,6 @@ project/target/
 .worksheet
 
 # End of https://www.gitignore.io/api/scala,emacs,ensime,intellij
+
+/datasets
+/temp

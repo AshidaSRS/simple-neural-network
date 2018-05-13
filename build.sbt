@@ -8,7 +8,7 @@ libraryDependencies  ++= Seq(
   "org.scalanlp" %% "breeze" % "1.0-RC2"
   , "org.scalanlp" %% "breeze-natives" % "1.0-RC2"
   , "org.scalanlp" %% "breeze-viz" % "1.0-RC2"
-  , "org.platanios" %% "tensorflow" % "0.1.1" classifier "linux-cpu-x86_64"
+  , "org.platanios" %% "tensorflow" % "0.1.1" classifier "darwin-cpu-x86_64"
   , "org.platanios" %% "tensorflow-api" % "0.1.1"
   , "org.platanios" %% "tensorflow-data" % "0.1.1"
   , "org.platanios" %% "tensorflow-jni" % "0.1.1"
