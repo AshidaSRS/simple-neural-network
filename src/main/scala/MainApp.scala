@@ -2,6 +2,6 @@ import simpleNeural.SimpleNeuralMain
 import simpleTensorflow.TensorFlowMain
 
 object MainApp extends App {
-  //SimpleNeuralMain.run()
+  SimpleNeuralMain.run()
   TensorFlowMain.run()
 }

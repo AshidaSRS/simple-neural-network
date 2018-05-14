@@ -138,3 +138,15 @@ project/target/
 
 /datasets
 /temp
+
+
+# Created by https://www.gitignore.io/api/ensime
+
+### Ensime ###
+# Ensime specific
+.ensime
+.ensime_cache/
+.ensime_lucene/
+
+
+# End of https://www.gitignore.io/api/ensime
